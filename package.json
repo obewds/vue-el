@@ -48,7 +48,7 @@
     "@obewds/obewds-tw-config": "^0.4.1",
     "@rollup/plugin-typescript": "^8.3.2",
     "@tailwindcss/aspect-ratio": "^0.4.0",
-    "@tailwindcss/forms": "^0.5.0",
+    "@tailwindcss/forms": "^0.5.1",
     "@tailwindcss/line-clamp": "^0.4.0",
     "@tailwindcss/typography": "^0.5.2",
     "@types/node": "^17.0.31",
