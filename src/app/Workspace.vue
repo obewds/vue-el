@@ -16,7 +16,7 @@
     
     <div class="bg-white text-center border-t-2 border-b-2 border-green-500 border-dashed py-24">
 
-        <VueEl/>
+        <VueEl tag="div"/>
 
     </div>
 

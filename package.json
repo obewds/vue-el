@@ -86,5 +86,9 @@
     "vue3",
     "Vue.js",
     "Tailwind CSS"
-  ]
+  ],
+  "dependencies": {
+    "@obewds/vue-component-helpers": "^0.2.1",
+    "@obewds/vue-validators": "^0.3.1"
+  }
 }
