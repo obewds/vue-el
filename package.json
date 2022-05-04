@@ -1,9 +1,9 @@
 {
   "name": "@obewds/vue-el",
-  "description": "The official OBE:WDS Vite/Vue TypeScript component package development kit with Tailwind CSS, VitePress and Vitest integrations",
-  "version": "0.1.0",
+  "description": "The @obewds/vue-el modular design system component for Vue.js",
+  "version": "1.3.1",
   "author": "@oberocks",
-  "homepage": "https://github.com/obewds/vue-el#readme",
+  "homepage": "https://obewds.github.io/vue-el/",
   "license": "MIT",
   "main": "./dist/vue-el.umd.js",
   "module": "./dist/vue-el.es.js",
@@ -37,9 +37,11 @@
     "pkg:login": "npm adduser",
     "pkg:publish": "npm publish --access public",
     "publish:prep": "npx rimraf dist && npm run pkg:tsbundle",
-    "publish:package": "npm run publish:prep && npm run pkg:org && npm run pkg:login && npm run pkg:publish",
-    "init:as": "node scripts/init.js",
-    "delete:init:as": "npx rimraf scripts/init.js"
+    "publish:package": "npm run publish:prep && npm run pkg:org && npm run pkg:login && npm run pkg:publish"
+  },
+  "dependencies": {
+    "@obewds/vue-component-helpers": "^0.2.1",
+    "@obewds/vue-validators": "^0.3.1"
   },
   "peerDependencies": {
     "vue": "^3.2.33"
@@ -86,9 +88,5 @@
     "vue3",
     "Vue.js",
     "Tailwind CSS"
-  ],
-  "dependencies": {
-    "@obewds/vue-component-helpers": "^0.2.1",
-    "@obewds/vue-validators": "^0.3.1"
-  }
+  ]
 }
