@@ -1,9 +1,9 @@
 // ./docs/.vitepress/config.js
 
 module.exports = {
-    base: '/vite-vue-ts-compo-pkg-starter/',
-    title: '@obewds/vite-vue-ts-compo-pkg-starter',
-    description: 'A documentation site for the ViteVueTsCompoPkgStarter component',
+    base: '/vue-el/',
+    title: '@obewds/vue-el',
+    description: 'A documentation site for the VueEl component',
     markdown: {
       lineNumbers: true,
     },
@@ -12,8 +12,8 @@ module.exports = {
             { text: "Home", link: "/" },
             { text: "Component", link: "/component" },
             { text: "Tests", link: "/tests" },
-            { text: "npm", link: "https://www.npmjs.com/package/@obewds/vite-vue-ts-compo-pkg-starter" },
-            { text: "GitHub", link: "https://github.com/obewds/vite-vue-ts-compo-pkg-starter" },
+            { text: "npm", link: "https://www.npmjs.com/package/@obewds/vue-el" },
+            { text: "GitHub", link: "https://github.com/obewds/vue-el" },
         ],
         // sidebar: [
             // { text: "Installation", link: "/#installation" },
