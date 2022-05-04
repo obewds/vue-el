@@ -1,11 +1,11 @@
 <script setup lang="ts">
 
-    type ViteVueTsCompoPkgStarterProps = {
+    type VueElProps = {
         text?: string | undefined
     }
 
     const props = withDefaults(
-        defineProps<ViteVueTsCompoPkgStarterProps>(), {
+        defineProps<VueElProps>(), {
             text: ''
         }
     )
@@ -20,7 +20,7 @@
             {{ text }}
         </template>
         <template v-else>
-            <slot>ViteVueTsCompoPkgStarter</slot>
+            <slot>VueEl</slot>
         </template>
     </div>
 
