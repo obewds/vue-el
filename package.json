@@ -1,7 +1,7 @@
 {
   "name": "@obewds/vue-el",
   "description": "The @obewds/vue-el modular design system component for Vue.js",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "author": "@oberocks",
   "homepage": "https://obewds.github.io/vue-el/",
   "license": "MIT",
