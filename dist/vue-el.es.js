@@ -3,6 +3,7 @@ import { elementTags } from "@obewds/vue-validators";
 import { isEmptyOrUnsupportedElement } from "@obewds/vue-component-helpers";
 const _hoisted_1 = /* @__PURE__ */ createTextVNode("VueEl");
 const _sfc_main = /* @__PURE__ */ defineComponent({
+  __name: "VueEl",
   props: {
     tag: {
       type: String,
