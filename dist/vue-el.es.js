@@ -1,36 +1,35 @@
-import { defineComponent, openBlock, createElementBlock, Fragment, createBlock, resolveDynamicComponent, withCtx, createTextVNode, toDisplayString, renderSlot } from "vue";
-import { elementTags } from "@obewds/vue-validators";
-import { isEmptyOrUnsupportedElement } from "@obewds/vue-component-helpers";
-const _hoisted_1 = /* @__PURE__ */ createTextVNode("VueEl");
-const _sfc_main = /* @__PURE__ */ defineComponent({
+import { defineComponent as m, openBlock as r, createElementBlock as n, Fragment as o, createBlock as i, resolveDynamicComponent as u, withCtx as c, createTextVNode as a, toDisplayString as p, renderSlot as s } from "vue";
+import { elementTags as d } from "@obewds/vue-validators";
+import { isEmptyOrUnsupportedElement as y } from "@obewds/vue-component-helpers";
+const f = /* @__PURE__ */ a("VueEl"), S = /* @__PURE__ */ m({
   __name: "VueEl",
   props: {
     tag: {
       type: String,
-      required: true,
-      validator: (prop) => elementTags.includes(prop)
+      required: !0,
+      validator: (e) => d.includes(e)
     },
     text: {
       type: String,
       default: ""
     }
   },
-  setup(__props) {
-    function emptyElementOrUnsupportedError(tag) {
-      return isEmptyOrUnsupportedElement(tag);
+  setup(e) {
+    function l(t) {
+      return y(t);
     }
-    return (_ctx, _cache) => {
-      return emptyElementOrUnsupportedError(__props.tag) ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [], 64)) : (openBlock(), createBlock(resolveDynamicComponent(__props.tag), { key: 1 }, {
-        default: withCtx(() => [
-          __props.text ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
-            createTextVNode(toDisplayString(__props.text), 1)
-          ], 64)) : renderSlot(_ctx.$slots, "default", { key: 1 }, () => [
-            _hoisted_1
-          ])
-        ]),
-        _: 3
-      }));
-    };
+    return (t, g) => l(e.tag) ? (r(), n(o, { key: 0 }, [], 64)) : (r(), i(u(e.tag), { key: 1 }, {
+      default: c(() => [
+        e.text ? (r(), n(o, { key: 0 }, [
+          a(p(e.text), 1)
+        ], 64)) : s(t.$slots, "default", { key: 1 }, () => [
+          f
+        ])
+      ]),
+      _: 3
+    }));
   }
 });
-export { _sfc_main as VueEl };
+export {
+  S as VueEl
+};
