@@ -1,13 +1,13 @@
-import { defineComponent as m, openBlock as r, createElementBlock as n, Fragment as o, createBlock as i, resolveDynamicComponent as u, withCtx as c, createTextVNode as a, toDisplayString as p, renderSlot as s } from "vue";
-import { elementTags as d } from "@obewds/vue-validators";
+import { defineComponent as m, openBlock as r, createElementBlock as n, Fragment as o, createBlock as i, resolveDynamicComponent as u, withCtx as c, createTextVNode as a, toDisplayString as p, renderSlot as d } from "vue";
+import { elementTags as s } from "@obewds/vue-validators";
 import { isEmptyOrUnsupportedElement as y } from "@obewds/vue-component-helpers";
-const f = /* @__PURE__ */ a("VueEl"), S = /* @__PURE__ */ m({
+const x = /* @__PURE__ */ m({
   __name: "VueEl",
   props: {
     tag: {
       type: String,
       required: !0,
-      validator: (e) => d.includes(e)
+      validator: (e) => s.includes(e)
     },
     text: {
       type: String,
@@ -18,12 +18,12 @@ const f = /* @__PURE__ */ a("VueEl"), S = /* @__PURE__ */ m({
     function l(t) {
       return y(t);
     }
-    return (t, g) => l(e.tag) ? (r(), n(o, { key: 0 }, [], 64)) : (r(), i(u(e.tag), { key: 1 }, {
+    return (t, f) => l(e.tag) ? (r(), n(o, { key: 0 }, [], 64)) : (r(), i(u(e.tag), { key: 1 }, {
       default: c(() => [
         e.text ? (r(), n(o, { key: 0 }, [
           a(p(e.text), 1)
-        ], 64)) : s(t.$slots, "default", { key: 1 }, () => [
-          f
+        ], 64)) : d(t.$slots, "default", { key: 1 }, () => [
+          a("VueEl")
         ])
       ]),
       _: 3
@@ -31,5 +31,5 @@ const f = /* @__PURE__ */ a("VueEl"), S = /* @__PURE__ */ m({
   }
 });
 export {
-  S as VueEl
+  x as VueEl
 };
